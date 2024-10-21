@@ -1,7 +1,16 @@
+
+
+
 .body{
     background-color: rgb(36, 36, 36);
+    color: white;
 }
 /* Shared style */
+.dis-flex{
+    display: flex;
+}
+
+
 
 /* Headre section */
 nav{
@@ -14,13 +23,11 @@ nav{
     font-size:35;
     font-style: italic;
     color: #E6533C;
-    font-weight: 600;
-    width: 130px;
 }
 li{
     width: 255px;
     display: inline;
-    margin-right: 25px;
+    margin-left: 50px;
 }
 a{
     color: white;
@@ -28,6 +35,54 @@ a{
 }
 .home{
     background-color: #E6533C;
-    border-radius: 5px;
-    padding: 2px;
+    border-radius: 18px;
+    padding: 8px 20px;
+}
+
+
+/* first section */
+.sec-h-title{
+    width: 600px;
+    /* border: 1px solid red; */
+}
+#spaisal{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.sec-h-title h1{
+    font-size: 70px;
+    width: 70%;
+}
+.btn-a{
+    background-color: #E6533C;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+}
+.btn-b{
+    border: 2px solid white;
+    background-color: rgb(39, 38, 38);
+    color: white;
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+.sec-h{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Responds media */
+@media screen and (max-width:576px){
+    .servise-type{
+        display: none;
+    }
+    .brand{
+        border: 1px solid rebeccapurple;
+        font-size: 30px;
+    }
 }
