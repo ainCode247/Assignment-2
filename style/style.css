@@ -14,9 +14,8 @@
 
 /* Headre section */
 nav{
-    width: 75%;
+    max-width: 950px;;
     margin: 0 auto;
-    display: flex;
     justify-content: space-between;
 }
 .brand h1{
@@ -77,12 +76,23 @@ a{
 
 
 /* Responds media */
-@media screen and (max-width:576px){
-    .servise-type{
+@media screen and (max-width:576px) {
+    ul{
         display: none;
+        
     }
-    .brand{
-        border: 1px solid rebeccapurple;
-        font-size: 30px;
+    .sec-h,
+    ul,
+    .navber,
+    .sec-h-title
+    nav{
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .sec-h-title{
+        padding: 20px;
+        /* text-align: center; */
+        gap: 5px;
+
     }
 }
